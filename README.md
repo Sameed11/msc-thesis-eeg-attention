@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the full implementation and written thesis for my MSc research on EEG-based attention state prediction. The work proposes a two-stage, uncertainty-aware meta-learning framework that addresses three fundamental limitations in current brain-computer interface (BCI) research: single-paradigm training, predefined attention labeling, and the absence of predictive uncertainty quantification.
+This repository contains the full code implementation and written thesis for my master's research on EEG-based attention state prediction. The work proposes a two-stage, uncertainty-aware meta-learning framework that addresses three fundamental limitations in current brain-computer interface (BCI) research: single-paradigm training, predefined attention labeling, and the absence of predictive uncertainty quantification.
 
 EEG data was collected from nine subjects across four experimental paradigms (oddball task, car crash video, animal surprise video, and surprise events). Attention states were first discovered in a data-driven manner through unsupervised clustering, then classified using a meta-learning pipeline that combines spectral predictions with contextual information. The framework achieved 97.4% classification accuracy under Leave-One-Subject-Out (LOSO) cross-validation, with statistically significant uncertainty quantification between correct and incorrect predictions (p < 10^-6).
 

@@ -72,12 +72,12 @@ The pipeline operates across three sequential stages:
                               ║
                               ▼
 ╔══════════════════════════════════════════════════════════════════╗
-║               STAGE 1  ·  PREPROCESSING & FEATURES             ║
+║               STAGE 1  ·  PREPROCESSING & FEATURES               ║
 ║                                                                  ║
-║  Butterworth filter (0.5–45 Hz)  →  Z-score normalization       ║
-║  Epoching (1s windows)           →  Quality assurance           ║
+║  Butterworth filter (0.5–45 Hz)  →  Z-score normalization        ║
+║  Epoching (1s windows)           →  Quality assurance            ║
 ║                                                                  ║
-║  Feature Extraction  →  59-dimensional spectral vector          ║
+║  Feature Extraction  →  59-dimensional spectral vector           ║
 ║  ├── Global band powers (5)                                      ║
 ║  ├── Relative band powers (5)                                    ║
 ║  ├── ROI band powers across 7 cortical regions (35)              ║
@@ -93,9 +93,9 @@ The pipeline operates across three sequential stages:
 ║  k-means clustering    ║     ║  Input:  59-dim feature vector   ║
 ║  on 7-dim target       ║     ║  Output: 7-dim target vector     ║
 ║  spectral features     ║     ║                                  ║
-║                        ║     ║  R² > 0.94  for 5 band powers   ║
-║  3 states found:       ║     ║  R² = 0.75  for α/β ratio       ║
-║  · Baseline Attention  ║     ║  Mean MAE = 0.122 (LOSO)        ║
+║                        ║     ║  R² > 0.94  for 5 band powers    ║
+║  3 states found:       ║     ║  R² = 0.75  for α/β ratio        ║
+║  · Baseline Attention  ║     ║  Mean MAE = 0.122 (LOSO)         ║
 ║  · Low Arousal         ║     ╚══════════════╦═══════════════════╝
 ║  · High Attention      ║                    ║
 ╚════════════╦═══════════╝                    ║ + 9 contextual
@@ -104,22 +104,22 @@ The pipeline operates across three sequential stages:
                              ║
                              ▼
 ╔══════════════════════════════════════════════════════════════════╗
-║            STAGE 2  ·  META-LEARNERS  (16-dim input)            ║
+║            STAGE 2  ·  META-LEARNERS  (16-dim input)             ║
 ║                                                                  ║
-║   Logistic Regression     XGBoost          Transformer          ║
-║   Accuracy: 97.4%         Accuracy: 96.4%  Accuracy: 95.7%      ║
-║   F1-Macro: 0.972         F1-Macro: 0.963  F1-Macro: 0.956      ║
+║   Logistic Regression     XGBoost          Transformer           ║
+║   Accuracy: 97.4%         Accuracy: 96.4%  Accuracy: 95.7%       ║
+║   F1-Macro: 0.972         F1-Macro: 0.963  F1-Macro: 0.956       ║ 
 ╚══════════════════════════════╦═══════════════════════════════════╝
                                ║
                                ▼
 ╔══════════════════════════════════════════════════════════════════╗
-║           STAGE 3  ·  UNCERTAINTY QUANTIFICATION                ║
+║           STAGE 3  ·  UNCERTAINTY QUANTIFICATION                 ║
 ║                                                                  ║
 ║  Platt Scaling           Ensemble Entropy    MC Dropout          ║
 ║  (Logistic Regression)   (XGBoost)           (Transformer)       ║
 ║                                                                  ║
-║  Incorrect predictions exhibit 2–4× higher uncertainty          ║
-║  across all models  ·  p < 10⁻⁶  ·  Cohen's d > 1.7            ║
+║  Incorrect predictions exhibit 2–4× higher uncertainty           ║
+║  across all models  ·  p < 10⁻⁶  ·  Cohen's d > 1.7              ║
 ╚══════════════════════════════════════════════════════════════════╝
 ```
 

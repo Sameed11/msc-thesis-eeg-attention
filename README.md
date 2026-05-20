@@ -1,35 +1,9 @@
-<div align="center">
 
-<br/>
-
-<img src="https://img.shields.io/badge/University_of_Potsdam-003366?style=for-the-badge&logoColor=white" alt="University of Potsdam"/>
-&nbsp;
-<img src="https://img.shields.io/badge/SNAP_GmbH-FFFC00?style=for-the-badge&logoColor=black" alt="SNAP GmbH"/>
-&nbsp;
-<img src="https://img.shields.io/badge/MSc_Thesis-2026-4CAF50?style=for-the-badge" alt="MSc Thesis 2026"/>
-
-<br/><br/>
 
 # 🧠 Robust Attention State Prediction from EEG Signals
 ## Using Meta-Learning and Uncertainty-Aware Deep Learning
 
-<br/>
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
-<img src="https://img.shields.io/badge/LightGBM-2980B9?style=flat-square&logoColor=white"/>
-<img src="https://img.shields.io/badge/XGBoost-FF6600?style=flat-square&logoColor=white"/>
-<img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white"/>
-
-<br/><br/>
-
-<p>
-  <b>Ahmed Sameed</b><br/>
-  Supervised by <b>Dr. Fabian Steinbeck</b> (SNAP GmbH)
-  &nbsp;·&nbsp;
-  <b>Prof. Dr. Sebastian Reich</b> (University of Potsdam)
-</p>
 
 <br/>
 
@@ -53,21 +27,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Repository Contents](#-repository-contents)
-- [Framework Architecture](#-framework-architecture)
-- [Discovered Attention States](#-discovered-attention-states)
-- [Key Results](#-key-results)
-- [Technical Stack](#-technical-stack)
-- [Experimental Setup](#-experimental-setup)
-- [Research Contributions](#-research-contributions)
-- [Note on Data](#-note-on-data)
-- [Thesis Document](#-thesis-document)
-- [Contact](#-contact)
-
----
 
 ## 🔍 Overview
 
@@ -90,7 +49,7 @@ EEG data was collected from **9 subjects** across **4 experimental paradigms**. 
 ## 📁 Repository Contents
 
 ```
-📦 eeg-attention-meta-learning
+📦msc-thesis-eeg-attention
  ├── 📓 Thesis_code.ipynb     ← Full implementation pipeline
  └── 📄 Thesis_Final.pdf      ← Complete written thesis
 ```
@@ -246,7 +205,7 @@ Three neurophysiologically distinct states identified through k-means clustering
 | 🥈 XGBoost | 96.4% | 96.4% | 0.963 |
 | 🥉 Transformer | 95.7% | 95.8% | 0.956 |
 
-> Near-identical accuracy and balanced accuracy for all models confirms no majority-class bias. The superior performance of Logistic Regression indicates the discovered attention states are approximately **linearly separable** in the 16-dimensional meta-feature space.
+> Near-identical accuracy and balanced accuracy for all models confirm no majority-class bias. The superior performance of Logistic Regression indicates the discovered attention states are approximately **linearly separable** in the 16-dimensional meta-feature space.
 
 ---
 
@@ -338,7 +297,3 @@ This work was completed in February 2026 as part of the MSc in Data Science at t
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahmed-sameed11/)
 
 ---
-
-<div align="center">
-<sub>University of Potsdam · Faculty of Mathematics · SNAP GmbH · Bochum · 2026</sub>
-</div>

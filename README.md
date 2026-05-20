@@ -1,7 +1,6 @@
 
 
-# 🧠 Robust Attention State Prediction from EEG Signals
-## Using Meta-Learning and Uncertainty-Aware Deep Learning
+# 🧠 Robust Attention State Prediction from EEG Signals Using Meta-Learning and Uncertainty-Aware Deep Learning
 
 
 

@@ -2,7 +2,7 @@
 
 # 🧠 Robust Attention State Prediction from EEG Signals Using Meta-Learning and Uncertainty-Aware Deep Learning
 
-##This repository contains the implementation and thesis document for my MSc thesis on EEG-based attention state prediction. The project combines spectral EEG features, meta-learning, and uncertainty quantification to classify attention states across subjects and experimental paradigms. Because the EEG dataset was collected in-house and is not publicly available, this repository is intended as a transparent methodological reference. The notebook shows the full preprocessing, feature extraction, modeling, validation, and uncertainty-estimation workflow.
+## This repository contains the implementation and thesis document for my MSc thesis on EEG-based attention state prediction. The project combines spectral EEG features, meta-learning, and uncertainty quantification to classify attention states across subjects and experimental paradigms. Because the EEG dataset was collected in-house and is not publicly available, this repository is intended as a transparent methodological reference. The notebook shows the full preprocessing, feature extraction, modeling, validation, and uncertainty-estimation workflow.
 
 <br/>
 

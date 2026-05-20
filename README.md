@@ -284,7 +284,7 @@ The EEG dataset used in this work was collected through in-house experimentation
 
 ## 📖 Thesis Document
 
-The full written thesis is available in this repository: [`Thesis_Final.pdf`](./Thesis_Final.pdf)
+The full written thesis is available here: [`Thesis_Final.pdf`](./Thesis_Final.pdf)
 
 This work was completed in February 2026 as part of the MSc in Data Science at the University of Potsdam, in collaboration with SNAP GmbH, Bochum.
 

@@ -66,8 +66,8 @@ The pipeline operates across three sequential stages:
 
 ```
 ╔══════════════════════════════════════════════════════════════════╗
-║                        RAW EEG SIGNAL                           ║
-║              16 channels  ·  125 Hz  ·  9 subjects              ║
+║                        RAW EEG SIGNAL                            ║
+║              16 channels  ·  125 Hz  ·  9 subjects               ║
 ╚═════════════════════════════╦════════════════════════════════════╝
                               ║
                               ▼
@@ -83,7 +83,7 @@ The pipeline operates across three sequential stages:
 ║  ├── ROI band powers across 7 cortical regions (35)              ║
 ║  ├── Alpha/beta & theta/beta ratios (2)                          ║
 ║  └── Hemispheric asymmetry + aliases (12)                        ║
-╚════════════╦════════════════════════════════╦═════════════════════╝
+╚════════════╦════════════════════════════════╦════════════════════╝
              ║                                ║
              ▼                                ▼
 ╔════════════════════════╗     ╔══════════════════════════════════╗
